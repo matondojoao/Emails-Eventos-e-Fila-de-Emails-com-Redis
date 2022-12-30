@@ -332,7 +332,7 @@ ul.social li{
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" style="text-align: center;">
-			            <h1><a href="">Envio de Email</a></h1>
+			            <img src="{{ $message->embed(public_path().'/img/logo.png') }}" style="width: 200px;">
 			          </td>
           		</tr>
           	</table>
