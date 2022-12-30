@@ -14,14 +14,15 @@ class HomeEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    public $text;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($text)
     {
-        //
+        $this->$text=$text;
     }
 
     /**
