@@ -259,7 +259,11 @@ table{
 .heading-section-white{
 	color: rgba(255,255,255,.8);
 }
-
+.heading-section-white h2{
+	font-family:
+	line-height: 1;
+	padding-bottom: 0;
+}
 .heading-section-white h2{
 	color: #ffffff;
 }
@@ -352,6 +356,12 @@ ul.social li{
           </td>
 	      </tr><!-- end tr -->
       <!-- 1 Column Text + Button : END -->
+      </table>
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+          <td class="bg_light" style="text-align: center;">
+          	<p>Data/Hora de Acesso: <a href="#" style="color: rgba(0,0,0,.8);"></a></p>
+          </td>
+        </tr>
       </table>
 
     </div>
