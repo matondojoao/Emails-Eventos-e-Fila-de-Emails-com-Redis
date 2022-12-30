@@ -27,9 +27,9 @@ class NovoAcesso extends Mailable
     public function build()
     {
         return $this->view('NovoAcesso')->with([
-            'nome'  => $this->user->name,
-            'email'  => $this->user->email,
+            'nome'=> $this->user->name,
+            'email'=>$this->user->email,
             'dataHora'=>now()->setTimezone('Africa/Luanda')->format('d-m-Y H:i:s'),
-        ]);
+        ])->attach(public_path().'/arquivo/matondosendmailer.pdf');
     }
 }
