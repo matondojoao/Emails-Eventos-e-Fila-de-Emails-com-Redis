@@ -16,7 +16,7 @@ class NovoAcesso extends Mailable
 
     public function __construct(User $user)
     {
-        $this->user=$user;
+        $this->user = $user;
     }
 
     /**
@@ -26,6 +26,8 @@ class NovoAcesso extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.NovoAcesso')->with(['name'=>$this->user->name]);
+        return $this->view('NovoAcesso')->with([
+            'nome'  => $this->user->name,
+        ]);
     }
 }

@@ -346,8 +346,8 @@ ul.social li{
             	<tr>
             		<td>
             			<div class="text" style="padding: 0 2.5em; text-align: center;">
-            				<h2>Seja bem-vindo(a), {{$user->name}}</h2>
-            				<h3>Você acabou de acessar o sistema utilizando o seu email</h3>
+            				<h3>Seja bem vindo(a), {{$nome}}</h3>
+            				<h2>Você acabou de acessar o sistema utilizando o seu email</h2>
             				<p><a href="#" class="btn btn-primary">Yes! Subscribe Me</a></p>
             			</div>
             		</td>
