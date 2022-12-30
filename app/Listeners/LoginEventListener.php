@@ -2,7 +2,7 @@
 
 namespace App\Listeners;
 
-use App\Events\LoginEvent;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
@@ -24,8 +24,10 @@ class LoginEventListener
      * @param  \App\Events\LoginEvent  $event
      * @return void
      */
-    public function handle(LoginEvent $event)
+    public function handle(Login $event)
     {
        info("Logou no Sistema");
+       info($event->user->name);
+       info($event->user->email);
     }
 }

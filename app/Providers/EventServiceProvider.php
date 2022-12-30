@@ -8,6 +8,8 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 use Illuminate\Support\Facades\Event;
 use App\Events\LoginEvent;
 use App\Listeners\LoginEventListener;
+use Illuminate\Auth\Events\Login;
+
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -20,7 +22,7 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
-        LoginEvent::class=>[
+        Login::class=>[
             LoginEventListener::class,
         ],
     ];
