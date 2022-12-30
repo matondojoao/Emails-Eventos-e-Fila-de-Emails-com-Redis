@@ -346,8 +346,8 @@ ul.social li{
             	<tr>
             		<td>
             			<div class="text" style="padding: 0 2.5em; text-align: center;">
-            				<h3>Seja bem vindo(a), {{$nome}}</h3>
-            				<h4>Você acabou de acessar o sistema utilizando o seu email</h4>
+            				<h3>Olá, {{$nome}} Obrigado pelo seu registro</h3>
+            				<h4>Você acabou de se registrar na nossa Plataforma</h4>
             			</div>
             		</td>
             	</tr>
