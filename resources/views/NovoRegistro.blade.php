@@ -346,8 +346,8 @@ ul.social li{
             	<tr>
             		<td>
             			<div class="text" style="padding: 0 2.5em; text-align: center;">
-            				<h3>Olá, {{$nome}} Obrigado pelo seu registro</h3>
-            				<h4>Você acabou de se registrar na nossa Plataforma</h4>
+            				<h4>Olá {{$nome}} Obrigado pelo seu registro</h4>
+            				<h6>Você acabou de registrar-se no sistema utilizando o seu email {{$email}}</h6>
             			</div>
             		</td>
             	</tr>
@@ -357,11 +357,11 @@ ul.social li{
       <!-- 1 Column Text + Button : END -->
       </table>
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-          <td class="bg_light" style="text-align: center;">
-          	<p>Data/Hora de Acesso: <a href="#" style="color: rgba(0,0,0,.8);"></a></p>
-          </td>
-        </tr>
-      </table>
+        <td class="bg_light" style="text-align: center;">
+            <p>Data/Hora de Acesso: {{$dataHora }} <a href="#" style="color: rgba(0,0,0,.8);"></a></p>
+        </td>
+      </tr>
+    </table>
 
     </div>
   </center>

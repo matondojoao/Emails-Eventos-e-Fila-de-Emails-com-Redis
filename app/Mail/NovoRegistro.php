@@ -30,6 +30,11 @@ class NovoRegistro extends Mailable
      */
     public function build()
     {
-        return $this->view('NovoRegistro')->with(['nome'=>$this->user->name]);
+        return $this->view('NovoRegistro')
+        ->with([
+            'nome'  => $this->user->name,
+            'email'  => $this->user->email,
+            'dataHora'=>now()->setTimezone('Africa/Luanda')->format('d-m-Y H:i:s'),
+        ]);
     }
 }
