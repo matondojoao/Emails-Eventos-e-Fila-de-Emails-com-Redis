@@ -26,6 +26,6 @@ class NovoAcesso extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('emails.NovoAcesso')->with(['name'=>$this->user->name]);
     }
 }
