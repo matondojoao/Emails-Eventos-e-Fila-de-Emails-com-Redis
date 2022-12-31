@@ -28,6 +28,8 @@ class LoginEventListener
      */
     public function handle(Login $event)
     {
-      Mail::to($event->user)->send(new NovoAcesso($event->user));
+      Mail::to($event->user)->
+      //->send(new NovoAcesso($event->user));
+      queue(new NovoAcesso($event->user));
     }
 }
